@@ -30,9 +30,42 @@ export default function Home() {
                         </CardContent>
                     </Card>
 
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Gemini Agent</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-gray-600 mb-4">
+                                Powered by Google Gemini with multimodal understanding
+                            </p>
+                            <Link href="/chat?agent=gemini">
+                                <Button className="w-full">Chat with Gemini</Button>
+                            </Link>
+                        </CardContent>
+                    </Card>
                 </div>
 
-
+                <Card>
+                    <CardHeader>
+                        <CardTitle>Capabilities</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="grid md:grid-cols-3 gap-4">
+                            <div>
+                                <h3 className="font-semibold mb-2">💰 HBAR Transfers</h3>
+                                <p className="text-sm text-gray-600">
+                                    Send and receive Hedera's native cryptocurrency
+                                </p>
+                            </div>
+                            <div>
+                                <h3 className="font-semibold mb-2">🪙 Token Management</h3>
+                                <p className="text-sm text-gray-600">
+                                    Create and manage fungible tokens and NFTs
+                                </p>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
             </div>
         </main>
     );
