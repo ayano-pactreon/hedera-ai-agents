@@ -9,10 +9,8 @@ function ChatContent() {
     const agent = searchParams.get('agent') as 'claude' | 'gemini' || 'claude';
 
     return (
-        <main className="min-h-screen bg-gray-50 p-8">
-            <div className="max-w-4xl mx-auto">
-                <ChatInterface agentType={agent} />
-            </div>
+        <main className="h-screen overflow-hidden">
+            <ChatInterface agentType={agent} />
         </main>
     );
 }
