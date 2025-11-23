@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -23,7 +24,9 @@ export default function Home() {
                             <p className="text-gray-600 mb-4">
                                 Powered by Anthropic Claude with advanced reasoning capabilities
                             </p>
-                            <Button className="w-full">Chat with Claude</Button>
+                            <Link href="/chat?agent=claude">
+                                <Button className="w-full">Chat with Claude</Button>
+                            </Link>
                         </CardContent>
                     </Card>
 
