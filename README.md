@@ -87,4 +87,4 @@ npm start
 
 ## Project Link
 
-Check it out here: https://superlative-griffin-8bd3fc.netlify.app/
+Check it out here: https://hedera-ai-agents.netlify.app/
