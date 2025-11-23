@@ -80,7 +80,7 @@ class GeminiAgent {
                         logger.success(`Function ${functionCall.name} executed`);
 
                         toolCalls.push({
-                            name: functionCall.name,
+                            name: functionCall.name || '',
                             input: functionCall.args || {},
                             output: result,
                         });
@@ -109,7 +109,7 @@ class GeminiAgent {
             logger.success('Conversation completed');
 
             return {
-                message: finalResponse,
+                message: finalResponse || '',
                 conversationId: request.conversationId || 'new',
                 toolCalls: toolCalls.length > 0 ? toolCalls : undefined,
             };

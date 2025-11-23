@@ -23,7 +23,6 @@ class HederaToolkit {
           coreTokenPlugin,        // Token & NFT operations
           coreAccountQueryPlugin, // Balance & account queries
         ],
-        executionMode: config.executionMode,
       },
     });
 

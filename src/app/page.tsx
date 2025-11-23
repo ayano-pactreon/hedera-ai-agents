@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -12,6 +13,18 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
                 <div className="container relative px-4 py-8 mx-auto max-w-7xl md:py-12">
                     <div className="flex flex-col items-center text-center gap-3">
+                        {/* Logo */}
+                        <div className="">
+                            <Image
+                                src="/logo.png"
+                                alt="Hedera AI Agents Logo"
+                                width={120}
+                                height={120}
+                                priority
+                                className="rounded-2xl"
+                            />
+                        </div>
+
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
                             <Sparkles className="w-3 h-3 text-primary" />
                             <span className="text-xs font-medium text-foreground">Powered by Hedera Network</span>

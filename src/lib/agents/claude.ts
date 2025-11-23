@@ -88,7 +88,7 @@ class ClaudeAgent {
 
                                 toolCalls.push({
                                     name: content.name,
-                                    input: content.input,
+                                    input: content.input as Record<string, any>,
                                     output: result,
                                 });
 

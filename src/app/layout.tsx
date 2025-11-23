@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
     title: 'Hedera AI Agents',
     description: 'AI-powered blockchain operations on Hedera network',
+    icons: {
+        icon: '/favicon.png',
+    },
 };
 
 export default function RootLayout({
